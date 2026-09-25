@@ -1,0 +1,6 @@
+{
+  "name": "Quick Draw - Multiplayer Reaction Showdown",
+  "description": "Fast-paced real-time multiplayer reaction duel game. Compete head-to-head with friends across 5 rounds to see who has the fastest draw.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

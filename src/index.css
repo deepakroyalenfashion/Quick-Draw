@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    touch-action: manipulation;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Screen shake for intense draw trigger */
+@keyframes screen-shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.animate-screen-shake {
+  animation: screen-shake 0.3s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes flash-glow {
+  0% { opacity: 0.8; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.03); }
+  100% { opacity: 0.9; transform: scale(1); }
+}
+
+.animate-flash-glow {
+  animation: flash-glow 0.25s ease-out;
+}
